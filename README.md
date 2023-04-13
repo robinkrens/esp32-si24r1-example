@@ -1,15 +1,15 @@
 # SI24R1 example
 
 ## Getting the sources
-Do not forget to recursively checkout the submodule
-```
+Do not forget to recursively clone the submodule
+`git clone --recurse-submodules  https://github.com/robinkrens/esp32-si24r1-example.git`
 
+
+## Setup 
 Tested with ESP-IDF v4.2 on a ESP32-WROOM32
 The libsi24 library is a submodule and used as a component in components/libsi24
 
 You will need two EPS32s, one configured as sender, the other as receiver
-
-## Setup 
 
 ```
    +---------+
@@ -26,6 +26,7 @@ You will need two EPS32s, one configured as sender, the other as receiver
 |          |            |          |
 +----------+            +----------+
 ```
+
 ### Configuration 
 Set `#define CONFIG_SI24_RECV_MODE 1` and `#define CONFIG_SI24_SEND_MODE 1`
 to respectivily set as receiver or sender. 
