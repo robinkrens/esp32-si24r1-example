@@ -1,0 +1,3 @@
+[submodule "components/libsi24"]
+	path = components/libsi24
+	url = https://github.com/robinkrens/libsi24.git
